@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shopping_app_provider_state_management/colors.dart';
 import 'package:shopping_app_provider_state_management/views/auth_screens/login_screen.dart';
-import 'package:shopping_app_provider_state_management/views/widgets/flexbutton.dart';
+import 'package:shopping_app_provider_state_management/widgets/flexbutton.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});

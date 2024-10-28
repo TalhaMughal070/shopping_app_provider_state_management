@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shopping_app_provider_state_management/colors.dart';
-import 'package:shopping_app_provider_state_management/views/widgets/flexbutton.dart';
+import 'package:shopping_app_provider_state_management/views/visual_search/search_by_photo.dart';
+import 'package:shopping_app_provider_state_management/widgets/flexbutton.dart';
 
 class VisualSearchScreen extends StatelessWidget {
   const VisualSearchScreen({super.key});
@@ -35,17 +36,21 @@ class VisualSearchScreen extends StatelessWidget {
             child: Container(
               color: Colors.black.withOpacity(0.5),
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: h * .04),
+                padding: EdgeInsets.symmetric(horizontal: h * .02),
                 child: Stack(
                   children: [
                     Positioned(
-                      top: h * .15,
+                      top: h * .18,
                       bottom: 0,
                       child: const Text(
-                        ' Search for outfit\n '
-                        'by taking a photo or \n'
+                        ' Search for outfit by\n'
+                        ' taking a photo or \n'
                         ' uploading an image',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
+                        textAlign: TextAlign.start,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 33,
+                            fontWeight: FontWeight.w500),
                       ),
                     ),
                     SizedBox(
@@ -54,11 +59,16 @@ class VisualSearchScreen extends StatelessWidget {
                     Positioned(
                         top: h * .4,
                         child: flexbutton(
-                          onpress: () {},
+                          onpress: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => SearchByPhoto()));
+                          },
                           title: 'TAKE A PHOTO',
                         )),
                     Positioned(
-                      top: h * .52,
+                      top: h * .49,
                       child: Container(
                         height: h * 0.07,
                         width: w * .9,

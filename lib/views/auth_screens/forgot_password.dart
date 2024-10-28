@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shopping_app_provider_state_management/views/visual_search_screen.dart';
-import 'package:shopping_app_provider_state_management/views/widgets/flexbutton.dart';
+import 'package:shopping_app_provider_state_management/views/visual_search/visual_search_screen.dart';
+import 'package:shopping_app_provider_state_management/widgets/flexbutton.dart';
 
 class ForgotPassword extends StatelessWidget {
   const ForgotPassword({super.key});
