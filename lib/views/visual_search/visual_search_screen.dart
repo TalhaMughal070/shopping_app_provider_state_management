@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shopping_app_provider_state_management/colors.dart';
+import 'package:shopping_app_provider_state_management/helper/colors.dart';
 import 'package:shopping_app_provider_state_management/views/visual_search/search_by_photo.dart';
 import 'package:shopping_app_provider_state_management/widgets/flexbutton.dart';
 

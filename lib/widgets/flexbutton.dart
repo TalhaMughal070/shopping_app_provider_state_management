@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app_provider_state_management/colors.dart';
+import 'package:shopping_app_provider_state_management/helper/colors.dart';
 
 class flexbutton extends StatelessWidget {
   final String title;
